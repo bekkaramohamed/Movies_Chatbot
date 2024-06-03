@@ -1,4 +1,5 @@
 🎬 MOVIE RECOMMENDATION CHATBOT PROJECT
+
 🎯 INTRODUCTION
 The goal of this project is to create a conversational system that can recommend movies based on a reference film or a description provided by the user.
 
@@ -9,9 +10,11 @@ The main objectives of this project are:
 Develop a chatbot that recommends movies based on user input.
 Utilize NLP techniques to process and understand user queries.
 Implement machine learning models to generate movie recommendations.
+
 💻 TECHNOLOGY STACK
 Google Colab: Used as the development environment for running Python code and Jupyter notebooks.
 Flask: Used to create the web interface for the chatbot.
+
 📂 DATASET
 The dataset used is the Wikipedia Movie Plots dataset, which contains descriptions of 34,886 movies. The columns include:
 
@@ -54,6 +57,7 @@ Model_similarity(myModel, tokens1, tokens2): This function calculates the simila
 Movie Recommendation:
 
 get_top_k_similar_movies_from_reference(myModel, dataset, reference_line, k=5): Extracts the tokenized description from the reference and calculates similarity scores between the reference and other movies in the dataset. It then sorts and returns the top k most similar movies.
+
 🧠 BERT
 Loading NLP Models:
 
@@ -90,7 +94,7 @@ Formatting the results and using GPT-2 to generate a contextualized response for
 Flask Application : 
 ![image](https://github.com/bekkaramohamed/Movies_Chatbot/assets/62758785/7c6dd629-e2ea-480f-9200-0640eb87120f)
 
-By Reference Title
+By Reference Title :
 ![image](https://github.com/bekkaramohamed/Movies_Chatbot/assets/62758785/adefd544-4239-43e2-8372-ca9aecca41c0)
 ![image](https://github.com/bekkaramohamed/Movies_Chatbot/assets/62758785/09209ea2-8845-46af-8c38-73891b66231e)
 
