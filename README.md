@@ -1,4 +1,4 @@
-🎬 MOVIE RECOMMENDATION CHATBOT PROJECT
+<p style="font-size: 18px;"> 🎬 MOVIE RECOMMENDATION CHATBOT PROJECT </p>
 
 🎯 INTRODUCTION
 The goal of this project is to create a conversational system that can recommend movies based on a reference film or a description provided by the user.
