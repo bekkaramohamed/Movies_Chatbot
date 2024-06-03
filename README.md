@@ -1,23 +1,22 @@
 🎬 MOVIE RECOMMENDATION CHATBOT PROJECT 
 
-🎯 INTRODUCTION
+🎯 INTRODUCTION : 
 The goal of this project is to create a conversational system that can recommend movies based on a reference film or a description provided by the user.
 
 
-📋 OBJECTIVES
-The main objectives of this project are:
+📋 OBJECTIVES : 
 
 - Develop a chatbot that recommends movies based on user input.
 - Utilize NLP techniques to process and understand user queries.
 - Implement machine learning models to generate movie recommendations.
 
-💻 TECHNOLOGY STACK
+💻 TECHNOLOGY STACK : 
 
 Google Colab: Used as the development environment for running Python code and Jupyter notebooks.
 Flask: Used to create the web interface for the chatbot.
 
 
-📂 DATASET
+📂 DATASET : 
 The dataset used is the Wikipedia Movie Plots dataset, which contains descriptions of 34,886 movies. The columns include:
 
 Release Year: Year of release
@@ -30,8 +29,7 @@ Wiki Page: URL of the Wikipedia page
 Plot: Detailed description of the movie plot
 
 
-🔍 DATA PREPROCESSING
-The preprocessing steps include:
+🔍 DATA PREPROCESSING : 
 
 Special Character Removal: Remove non-alphanumeric characters.
 Lowercasing: Convert all text to lowercase.
@@ -44,10 +42,10 @@ Preprocessing was essential for the application of Word2Vec, as this model canno
 To improve the quality of our data, we implemented a preprocessing step by creating an additional column named 'Plot_embedding'. This column contains the movie descriptions encoded using the BERT model. The purpose of this approach was to generate vector representations for each description. These representations were used to calculate similarities between descriptions.
 
 
-📝 PROJECT OVERVIEW
+📝 PROJECT OVERVIEW : 
 The project focuses on movie recommendation, where the chatbot suggests movies similar to the description or reference given by the user. To achieve this, it is essential to create vector representations for each movie in the dataset. This section discusses two models used for creating these embeddings: Word2Vec and BERT.
 
-🔡 WORD2VEC
+🔡 WORD2VEC :
 
 
 Model Training:
@@ -63,7 +61,7 @@ Model_similarity(myModel, tokens1, tokens2): This function calculates the simila
 Movie Recommendation:
 get_top_k_similar_movies_from_reference(myModel, dataset, reference_line, k=5): Extracts the tokenized description from the reference and calculates similarity scores between the reference and other movies in the dataset. It then sorts and returns the top k most similar movies.
 
-🧠 BERT
+🧠 BERT : 
 
 Loading NLP Models:
 nlp = spacy.load('en_core_web_sm'): Loads SpaCy's NLP model for text processing.
@@ -74,7 +72,7 @@ Similarity Calculation:
 find_k_films_bert_similarity_with_user_desc(model, dataset, user_desc, k=5): Encodes the user's description using the SentenceTransformer model and calculates cosine similarity between the reference and each movie plot in the dataset. It then sorts and returns the top k most similar movies.
 
 
-👤 USER INPUT PROCESSING
+👤 USER INPUT PROCESSING :
 To process user input (either movie description or title), the following steps are taken:
 
  - Retrieve variables from the user interface:
@@ -91,7 +89,7 @@ To process user input (either movie description or title), the following steps a
   extract_user_prompt_information(dataset, user_description): Extracts relevant information from a user-provided description.
 
   
-🏆 RECOMMENDATION FORMULATION
+🏆 RECOMMENDATION FORMULATION : 
 For text generation, the GPT-2 model is used due to its ability to generate coherent and semantically rich text. The function generate_response_with_gpt2 handles this task, taking the GPT-2 model, tokenizer, and maximum length as parameters.
 The function generate_final_recommendation(bert_model, gpt2_model, dataset, filter, genre, year, user_query) generates personalized movie recommendations using BERT and GPT-2 models.
 
@@ -111,11 +109,11 @@ Flask Application :
 
 
 
-🌐 FLASK APPLICATION
+🌐 FLASK APPLICATION : 
 Our Flask application uses HTML templates (in the templates folder) to display chatbot messages and integrates CSS and images (in the static folder) for styling. The app.py file connects these HTML templates to the Python code, which contains our model and various filtering and recommendation generation functions.
 
 
-🚪 MAIN ROUTES
+🚪 MAIN ROUTES : 
 
 ![image](https://github.com/bekkaramohamed/Movies_Chatbot/assets/62758785/9372cfdc-772b-4a1a-ab11-aed28c6d479c)
 
@@ -137,5 +135,5 @@ Using Flask provides a smooth user experience, allowing users to interact with t
 
 Diagram : 
 
-![image](https://github.com/bekkaramohamed/Movies_Chatbot/assets/62758785/8d9b37e8-a4bd-4aba-afb5-325ec0fbe72c)
+![image](https://github.com/bekkaramohamed/Movies_Chatbot/assets/62758785/15c5df41-ba4c-4a33-ace4-05a88038fcd4)
 
