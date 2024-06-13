@@ -1,12 +1,3 @@
-💻 Installation :
-* Clone this repository by using git clone https://github.com/YOUR-USERNAME/https://github.com/bekkaramohamed/Movies_Chatbot
-* Run pip install -r requirements.txt
-* Run python app.py
-
-💡 App functionality
-* You can choose to upload a file from the folder 'image_a_detectee', and you will get the output in the file 'image_detectee'
-* You can choose to run in live streaming with your webcam to detect real time waste
-
 🎯 INTRODUCTION : 
 The goal of this project is to create a conversational system that can recommend movies based on a reference film or a description provided by the user.
 
@@ -18,6 +9,14 @@ The goal of this project is to create a conversational system that can recommend
 
 📂 DATASET : 
 The dataset used is the Wikipedia Movie Plots dataset, which contains descriptions of 34,886 movies.
+
+💻 Installation :
+* Clone this repository by using git clone https://github.com/YOUR-USERNAME/https://github.com/bekkaramohamed/Movies_Chatbot
+* Run pip install -r requirements.txt
+* Run python app.py
+
+💡 App functionality
+* You can choose to provide the chatbot with a movie title or a description to get a recommendation for a similar movie.
 
 🚪 MAIN ROUTES : 
 
