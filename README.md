@@ -19,7 +19,9 @@ The dataset used is the Wikipedia Movie Plots dataset, which contains descriptio
 * You can choose to provide the chatbot with a movie title or a description to get a recommendation for a similar movie.
 
 🤖 Chatbot : 
-![exemple](https://github.com/bekkaramohamed/Movies_Chatbot/assets/62758785/62b01d4f-9316-4e7f-a3b0-65ff31a74f13)
+
+![interface](https://github.com/bekkaramohamed/Movies_Chatbot/assets/62758785/fbc3bb12-2182-4444-8718-2ad42607c8bc)
+
 
 🚪 MAIN ROUTES : 
 
