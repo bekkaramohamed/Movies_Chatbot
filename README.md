@@ -15,6 +15,9 @@ The dataset used is the Wikipedia Movie Plots dataset, which contains descriptio
 * Run pip install -r requirements.txt
 * Run python app.py
 
+Please note: You only need the flaskProject folder to run the project.
+However, I have provided a Jupyter notebook to help you understand the preprocessing, functions, and example use cases of the models (Word2Vec and BERT).
+
 💡 App functionality
 * You can choose to provide the chatbot with a movie title or a description to get a recommendation for a similar movie.
 
